@@ -5,11 +5,9 @@ MAINTAINER joway wong "joway.w@gmail.com"
 # Install packages
 RUN rm -rf /var/lib/apt/lists/* \
     && apt-get update && apt-get install -y \
-    build-essential chrpath libssl-dev libxft-dev libfreetype6 libfreetype6-dev libfontconfig1 libfontconfig1-dev \
+    build-essential chrpath libssl-dev libxft-dev libfreetype6 libfreetype6-dev libfontconfig1 libfontconfig1-dev libpq-dev  \
     g++ \
 	curl \
-    postgresql \
-    postgresql-contrib \
     memcached \
     nginx \
     ruby-full rubygems \
